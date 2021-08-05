@@ -19,4 +19,19 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  inputBox: {
+    borderColor: '#666',
+    borderStyle: 'solid',
+    borderWidth: 2,
+    marginHorizontal: 20,
+    paddingVertical: 10,
+
+  },
+  customBtn: {
+    backgroundColor: '#666',
+    paddingVertical: 10,
+    marginHorizontal: 50,
+    borderRadius: 10, 
+    marginVertical: 40 
+  }
 })
