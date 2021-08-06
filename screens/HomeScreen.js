@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import {
   View,
   Text,
-  Button,
   ScrollView,
   SafeAreaView,
   StatusBar,
@@ -10,6 +9,8 @@ import {
   Image,
   ImageBackground
 } from 'react-native'
+import {Button} from 'react-native-elements'
+
 
 import Box from './../components/Box'
 import styles from './../styles'
@@ -51,3 +52,7 @@ export default function Home({ navigation }) {
     </View>
   )
 }
+
+
+
+

@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-import {View, Text, TextInput, TouchableOpacity} from 'react-native'
+import {View, TouchableOpacity} from 'react-native'
+import {Input, Text} from 'react-native-elements'
+import { Ionicons, Button } from '@expo/vector-icons'
 
 import styles from '../styles'
 
@@ -35,29 +37,12 @@ export default function AddNewScreen () {
     }
     return (
         <View>
-            <Text>this is add new screen</Text>
-            <TextInput 
-            placeholder='Restaurant Name'
-            style={styles.inputBox}
-            // keyboardType='numeric'
-            autoCorrect={false}
-            onChangeText={text => setRestaurantName(text)}
-             />
-             <TextInput
-             placeholder='Address here' 
-             style={styles.inputBox}
-             onChangeText={text => setAddress(text)} />
-             <TextInput
-             placeholder='photo Url' 
-             style={styles.inputBox}
-             onChangeText={text => setPhotoUrl(text)} />
-             <TextInput
-             placeholder='Rating' 
-             style={styles.inputBox}
-             onChangeText={text => setRating(text)} />
-             <TouchableOpacity style={styles.customBtn} onPress={handleNewRestaurant} >
-                 <Text style={{color: 'white'}}> Send new Restaurant</Text>
-             </TouchableOpacity>
+            <Text h4> this is add new screen</Text>
+             <Input placeholder='Restaurant Name' autoCorrect={false} onChangeText={text => setRestaurantName(text)} />
+             <Input placeholder='Address here' onChangeText={text => setAddress(text)} />
+             <Input placeholder='photo Url' onChangeText={text => setPhotoUrl(text)} />
+             <Input placeholder='Rating' onChangeText={text => setRating(text)} />
+             <Button style={{width: 200}} title='Send new Restaurant' onPress={handleNewRestaurant} />
         </View>
     )
 }
